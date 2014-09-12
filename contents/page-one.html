@@ -1,0 +1,161 @@
+<! DOCTYPE>
+<html>
+	<head>
+    	<meta charset="gb2312" />
+		<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/base.css">
+		<link rel="stylesheet" type="text/css" href="./css/input-style.css">
+    	<style type="text/css">
+    		#content-page-one{
+    			width: 621px;
+    			height: auto;
+    		}
+			.wd50_{
+				padding-top: 12px;
+				width: 49%;
+				height: 18px;
+				padding-bottom: 12px;
+			}
+
+			.ml50_{
+				margin-left: 50%;
+			}
+			#ul li{
+				cursor: pointer;
+				width: 100px;
+				padding-top: 8px;
+				height: 16px;
+				padding-bottom: 8px;
+				margin-right: 2px;
+				float: left;
+			}
+
+    	</style>
+    	<script type="text/javascript">
+    		$(document).ready(function  (argument) {
+    			//获取6个切换的子元素
+    			var children = $('#company_info_contianer').children('div');
+    			//获取切换6个按钮
+    			var li = $('#ul').children('li');
+    			// var cPepole = $('#company_pepole');
+    			// var pPepole = $('#personal_pepole');这两个还没做完
+    			//将他们全部隐藏
+    			children.css('display','none');
+    			//设置第一个正常显示
+    			children.eq(0).css('display','block');
+    			//遍历按钮事件
+    			li.each(function(i,e){
+    				//设置每个按钮的点击事件
+    				$(this).click(function(ev){
+    					//所有的li元素加上tabs_off class并且移除其他的common_btn_on class
+    					li.addClass('tabs_off').removeClass('common_btn_on');
+    					//移除当前li的tabs_off class并且为当前li添加common_btn_on class
+    					$(this).removeClass('tabs_off').addClass('common_btn_on');
+    					//隐藏所有的内容div
+    					children.css('display','none');
+    					//根据index显示需要的div,因为全部为relative布局，所以实现了即时拉伸
+    					children.eq(i).css('display','block');
+    				});
+    			})
+
+    		})
+    	</script>
+    </head>
+    <body>
+		<div id="content-page-one" class="fgray">
+			<div class=" lh200">
+				<h1 class="f32 lh200">产品理念</h1>
+				<p>
+					运营周转、设备投资资金等企业的资金需求各种各样。并且确保资金长期稳定运用，对于企业主而言是一件非常重要的经营课题，特别是现在处于金融市场严峻低迷的情势，可以说是一个更大的问题。<br>
+					1号赁平台利用互联网金融新型的投融资模式与拥有国家颁发资质的融资租赁公司合作，为中小企业提供一个新的融资渠道和低本成的资金使用。<br>
+					同时，为投资者实现一个安心稳定的投资环璄、多样化的项目等，在收获福利之余，又实现支援全国各地的优质企业。<br>
+				</p>
+				<img  src="./contents/skin/bg1.png" class="mt22" >
+				<h1 class="mt22 f32 lh200">租赁宝产品优势</h1>
+				<p>
+					拥有企业核心资产 融资租赁公司拥有承租企业能产生持续现金流的核心设备或资产，如机械设备、飞机船舶等，直接把控融资企业的核心命脉；<br>
+					双重保障付租还本 承租方生产经营所创造的价值构成租赁后租金，定期向投资用户支付，若其未按时支付，由融资租赁公司代为偿付；<br>
+					所有权使用权分离 利用出租方拥有所有权、承租方仅有使用权的物权保护手段，出租方可据合同直接回收、处置租赁物从而规避投资人风险。<br>
+					<hr class="mt22">
+					<br>
+					银行融资申请有诸多条件。比如说成立不久的企业就算财务如何建全融资申请被拒的可能性也很大。或者借入期限短、融资额度小的情况，银行从利益方面考察也是敬而远之。
+				</p>
+			</div>
+			<div>
+				<h1 class="mt22 f32 lh200 ftred">1号赁的登场 让中小企业有更多的融资选择</h1>
+				<p class="lh200" >徹底的融资审查和各种保证条件附加，一号赁平台为的让投资者的资金有高级别的安全性一直努力着</p>
+				<img  class="mt10" src="./contents/skin/bg3.png" >
+				<img  class="mt10" src="./contents/skin/bg2.png" >
+			</div>
+			<div>
+				<h1 class=" f32 lh200 ftred">1.客户选择</h1>
+				<div class="fl tabs_off ftwhite  wd50_" id="company_pepole">企业客户</div>
+				<div class="tabs_off ftwhite  ml50_ wd50_" id="personal_pepole">个人客户</div>
+				<div></div>
+			</div>
+			<div>
+				<h1 class="mt22 f32 lh200 ftred">2.企业的尽职调查</h1>
+				<p class="lh200" >融资申请之时，针对融资企业的财务和经营等进行徹底分析。审查之时，提供下述资料等，必要时与相应部门的负责人进行多数面谈。</p>
+				<div>
+					<ul id="ul">
+						<li class="common_btn_on ftwhite">企业基本资料</li>
+						<li class="tabs_off ftwhite">企业经营资料</li>
+						<li class="tabs_off ftwhite">企业银行资料</li>
+						<li class="tabs_off ftwhite">涉及项目的请提供</li>
+						<li class="tabs_off ftwhite">如股东为企业法人的...</li>
+						<li class="tabs_off ftwhite">需提供担保企业的...</li>
+					</ul>
+				</div>
+				<div class="clear-fix"></div>
+				<div id="company_info_contianer" class="rel mt10 htauto">
+					<div class="rel wd100_ lh150">
+						<p>企业资本资料</p>
+						<p> 
+							[1] 租赁物清单（名称、类型、功能、价格、数量、权属证号、购买时间、厂家、净值） 租赁物购置合同、发票（权属证书）<br> 
+							[2] 工商注册登记信息表（近一个月内工商局查档打印，加盖有工商局印章）公司章程（工商局查档打印）、验资报<br>
+							[3] 承诺函（盖公章）<br> 
+							[4] 企业简介（包括企业发展沿革、经营团队、组织架构、企业荣誉、经营业绩、行业地位、对外担保情况、是否涉  
+							    诉、主要贷款银行信用评级）  <br> 
+							[5] 最新经年检的【企业营业执照正副本、组织机构代码证正副本、贷款卡（设置密码的，请提供密码）】基本开户
+							    许可证、机构信用代码证、税务登记证正副本。<br> 
+							[6]（法人代表+股东+实际控制人）身份证、户口本及住所证明（房产证复印件）、资产清单及复印件（房产+车等）
+							    、各人个人履历。实际控制人夫妇身份证、户口本、结婚证。 <br>
+							[7] 其他管理人员身份证及简历 <br>
+							[8] 企业经营场所租赁合同或自有产权证复印件 <br>
+							[9] 企业经营资质证书（产品许可证、合格证）及主要荣誉证书复印件<br>
+						</p>
+					</div>
+					<div class="rel wd100_">内容2<br>
+					（法人代表+股东+实际控制人）身份证、户口本及住所证明（房产证复印件）、资产清单及复印件（房产+车等）
+							    、各人个人履历。实际控制人夫妇身份证、户口本、结婚证。 <br>
+							[7] 其他管理人员身份证及简历 <br>
+							[8] 企业经营场所租赁合同或自有产权证复印件 <br>
+							[9] 企业经营资质证书（产品许可证、合格证）及主要荣誉证书复印件<br></div>
+					<div class="rel wd100_">内容3<br>
+					[5] 最新经年检的【企业营业执照正副本、组织机构代码证正副本、贷款卡（设置密码的，请提供密码）】基本开户
+							    许可证、机构信用代码证、税务登记证正副本。<br> </div>
+					<div class="rel wd100_">内容4</div>
+					<div class="rel wd100_">内容5</div>
+					<div class="rel wd100_">内容6</div>			
+				</div>
+				<img src="./contents/skin/bg4.png" class="mt22">
+			</div>
+			<div>
+				<h1 class="mt10 f32 lh200 ftred">3.履约保证措施</h1>
+				<p>
+					设定设备首付款
+					设定融资租赁保证金
+					个人客户：夫妻一方/其他家庭成员提供连带担保；企业客户：主要股东及法人代表提供连带担保
+					厂商/经销商承担租金代垫（逾期三期以内）/债权回购（逾期超过三期）担保
+					GPS或其他远程控制系统，可以实时监控设备运转情况，并可以进行开机/锁机  
+					办理足额的租赁物保险
+					在中国人民银行融资租赁登记系统进行登记公示
+					租赁物归属租赁公司所有，在承租人违约情形下，可不通过诉讼直接取回租赁物
+					租赁设备不列入企业客户的破产财产，可以对抗其他债权人
+					定期对厂商、经销商或者部分承租人进行租赁回访
+				</p>
+				<img src="./contents/skin/bg5.png">
+			</div>
+		</div>
+    </body>
+</html>

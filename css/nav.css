@@ -1,0 +1,101 @@
+        /**导航栏样式*/
+        #logo_pic{
+            background: url(../skin/ango2.png) -73px 0 no-repeat;
+            width: 332px;
+            height: 100%;
+        }
+        .red{
+            background-color: #d80b18;
+            height: 96px;
+            width: 868px;
+            float: right;
+        }
+        .black{
+            height: 50px;
+            width: 868px;
+            float: right;
+            background: url(../skin/color0.png) left no-repeat  #140e0a;
+        }
+     
+        .black li{
+            float: left;
+            width: 139px;
+            height: 50px;
+            line-height: 32px;
+            margin-right: 5px;
+        }
+        .black li a{
+            width: 143px;
+            height: 50px;
+            float: left;
+            
+        }
+        .myposition{
+            float: right;
+            height: 34px;
+            width: 868px;
+        }
+        #bg-red{
+            position: absolute;
+            width:50%;
+            height:96px;
+            background-color:#d80b18; 
+            right:0;
+        }
+        #bg-black{
+            position: absolute;
+            width:50%;
+            height:50px;
+            top: 96px;
+            background-color: #140e0a; 
+            right:0;
+        }
+        #wx{
+            cursor: pointer;
+            background: url(../skin/weixin1.png) center no-repeat;
+            width: 23px;
+            height: 20px;
+            margin-top: 68px;
+            position: relative;
+        }
+        #wb{
+            cursor: pointer;
+            background: url(../skin/weibo1.png) center no-repeat;
+            width: 24px;
+            height: 20px;
+            margin-top: 68px;
+            position: relative;
+        }
+       /* #wx:hover{
+            margin-top: 70px;
+        }
+        #wb:hover{
+             margin-top: 70px;
+        }*/
+        .nav_p1{
+            top:22px;
+            letter-spacing: 1.4px;
+            left: 271px;
+        }
+        .nav_p2{
+            top: 22px;
+            font-size: 36px;
+            left: 281px;
+        }
+        #shenghuo{
+            background: url(../skin/jifen_shenghuo_bg.png) center no-repeat;
+            width: 153px;
+            height: 28px;
+            margin-top: 60px;
+        }
+        #go_top{
+            cursor: pointer;
+            position: fixed;
+            display: none;
+            right: 10px;
+            bottom: 44px;
+            background: url('../skin/Go-Top-48.png') center no-repeat;
+            width: 56px;
+            height: 44px;
+            z-index: 500;
+        }

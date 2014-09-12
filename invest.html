@@ -1,0 +1,104 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="gb2312">
+		<link rel="stylesheet" type="text/css" href="./css/input-style.css">
+		<link rel="stylesheet" type="text/css" href="./css/base.css">
+		<link rel="stylesheet" type="text/css" href="./css/footer.css">
+		<link rel="stylesheet" type="text/css" href="./css/invest-page.css">
+		<!-- <link rel="stylesheet" type="text/css" href=""> -->
+		<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+		<title>我要投资</title>
+		<script type="text/javascript">
+			$(document).ready(function  (argument) {
+				// body...
+				//以下这个是控制银行卡添加以后div变形的问题。这边用2行代码，比多写N多DIV来的简单些。。。至少我是这么想的
+				var h = $('.wd-auto.htauto').eq(1).css('height');
+				$('#108').css('height',h);
+			})
+		</script>
+	</head>
+	<body>
+		<div class="rel wd1400 m0a ht40 mt48"></div>
+		<!--标题-->
+		<div class="rel wd1200 m0a mt41 titleColor ">where</div>
+		<!--标题end-->
+		<form >
+		<div class="rel wd1200 m0a mt10 htauto pt22">
+		  <!--投资产品-->	
+			<div class="mt22 htauto rel wd840 m0a">
+				<div class="wd160 fl">投资产品:</div>
+				<div class="wd-auto htauto">聚宝盆001</div>
+			</div>
+		  <!--投资产品end-->
+		  <!--银行卡-->
+			<div class="mt22 htauto rel wd840 m0a">
+				<div id="108" class="wd160 fl htauto">银行卡:</div>
+				<div class="wd-auto htauto">
+					<!--在这里添加和删除银行卡-->
+					<img src="./skin/banks.png">
+					<img src="./skin/banks.png">
+					<img src="./skin/banks.png">
+					<img src="./skin/banks.png">
+					<img src="./skin/banks.png">
+					<img src="./skin/banks.png">
+					<img src="./skin/banks.png">
+					<img src="./skin/banks.png">
+				</div>
+			</div>
+		  <!--银行卡end-->
+		  <!--手机号-->
+			<div class="mt22 htauto rel wd840 m0a">
+				<div class="wd160 fl">手机号:</div>
+				<div class="wd-auto htauto">1580*******</div>
+			</div>
+		 <!--手机号end-->
+		 <!--投资资金-->	
+			<div class="mt22 htauto rel wd840 m0a">
+				<div class="wd160 fl">投资金额:</div>
+				<div class="wd-auto htauto">
+					<input class="ipt130 mr22">
+					<span>元&nbsp;&nbsp;&nbsp;&nbsp;预期收益&nbsp;&nbsp;<span class="ftred">2850</span>&nbsp;&nbsp;元</span>
+				</div>
+			</div>
+		 <!--投资资金end-->
+		 <!--短信验证码-->	
+			<div class="mt22 htauto rel wd840 m0a">
+				<div class="wd160 fl">短信验证码:</div>
+				<div class="wd-auto htauto">
+					<input class="ipt130 mr22">
+					<button class="btn_on">获取验证码</button>
+				</div>
+			</div>
+		 <!--短信验证码end-->	
+			<div class="mt22 htauto rel wd840 m0a">
+				<div class="wd160 fl" >&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				<div class="wd-auto htauto">
+					<input type="checkbox" class="ipt-cbx mr10">
+					<span>我已经阅读了哈哈哈哈哈笑</span>
+				</div>
+			</div>
+		</form>	
+			<div class="mt22 htauto rel wd840 m0a">
+				<div class="wd160 fl">&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				<div class="wd-autohtauto ">
+					<button>下一步</button>
+				</div>
+			</div>
+		</div>
+		<!---->
+		<!--footer-->
+		<div class="footer">
+				<div id="coropation"></div>
+				<ul >
+					<li><a href="">联系我们</a>&nbsp;&nbsp;&nbsp;|</li>
+					<li><a href="">我的账户</a>&nbsp;&nbsp;&nbsp;|</li>
+					<li><a href="">投资规则</a>&nbsp;&nbsp;&nbsp;|</li>
+					<li><a href="">个人信息保障</a>&nbsp;&nbsp;|</li>
+					<li><a href="">合同规范</a></li>
+				</ul>
+			上海信於资产管理有限公司 www.1haolin.com? 2006-2014 沪ICP备14035173号-1
+		</div>
+		<!--footer-->
+	</body>
+</html>

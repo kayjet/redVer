@@ -1,0 +1,258 @@
+/*
+*css reset类
+*made by lk
+**/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,
+th,td{margin: 0;padding: 0;text-decoration:none;font-family: "microsoft yahei";font-size: 14px;}
+
+table{border-collapse: collapse;border-spacing: 0;}
+fieldset,img{border: 0;}
+address,caption,th,var,cite{font-style: normal;font-weight: normal;}
+ol,ul{list-style: none;}
+caption,th{text-align: left;}
+/*a元素属性记忆方法lo(发音lou)ve(发音vi) ha(发音ha估计同英音或美音的一种)te(发tie)*/
+a{text-decoration:none;}
+a:link{color: black}
+a:visited{color: black}
+a:hover{color: black;text-decoration:underline;}
+a:active{color: black}
+/*input元素属性*/
+input,button,select,textarea{outline:none}
+/*h1,h2,h3,h4,h5,h6{font-size: 100%;font-weight: normal;}标题的字体大小重置，根据需要而定*/
+/*q:before,q:after{content: ''}引用的前后内容*/
+/*文字排版*/
+.f12{
+	font-size: 12px;
+}
+.f13{
+	font-size: 13px;
+}
+.f14{
+	font-size: 14px;
+}
+.f15{
+	font-size: 15px;
+}
+.f16{
+	font-size: 16px;
+}
+.f24{
+	font-size: 24px;
+}
+.f32{
+	font-size: 32px;
+}
+.f48{
+	font-size: 48px;
+}
+.tc{
+	text-align: center;
+}
+.indent_1half{
+	text-indent: 1.5em;
+}
+.fora{
+	color:#da2a2c;
+}
+.f60b{font-weight: bold;font-size: 60px;}
+.f120{font-size: 120px;}
+.fb{font-weight: bold;}
+.lh32{
+	line-height: 32px;
+}
+.lh150{
+	line-height: 150%;
+}
+.lh10{
+	line-height: 10px;
+}
+.lh180{
+	line-height: 180%;
+}
+.lh18{line-height: 18px;}
+.lh200{
+	line-height: 200%;
+}
+.ftwhite{
+	color: white;
+}
+.ftred{
+	color: red;
+}
+.fblue{
+	color: #008aff;
+}
+
+.fls3{
+	letter-spacing: 3px;
+}
+.fls2{
+	letter-spacing: 3px;
+}
+
+/*定位*/
+.abs{
+	position: absolute;
+}
+.rel{
+	position: relative;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.rel-auto{
+	position: relative;
+	margin: 0 auto;
+	height: auto;
+}
+/*长度高度*/
+.wd-auto{
+	width: auto;
+}
+.wd1400{
+	width: 1400px;
+}
+.wd40{
+	width: 40px;
+}
+.wd1200{
+	width: 1200px;
+}
+.wd1000{
+	width: 1000px;
+}
+.wd200{
+	width: 200px;
+}
+.wd160{
+	width: 160px;
+}
+.wd840{
+	width: 840px;
+}
+.wd995{
+	width: 995px;
+}
+.wd120{
+	width: 120px;
+}
+.wd680{
+	width: 680px;
+}
+.wd250{
+	width: 250px;
+}
+.wd460{
+	width: 460px;
+}
+.wd325{
+	width: 325px;
+}
+.ht180{
+	height:180px;
+}
+.ht100{
+	height: 100px;
+}
+.ht40{
+	height: 40px;
+}
+.htauto{
+	height: auto;
+}
+.wd100{width: 100px;}
+.wd100_{
+	width: 100%;
+}
+.ht100_{
+	height: 100%;
+}
+.ht32{
+	height:32px;
+}
+/*边距*/
+.pb22{
+	padding-bottom: 22px;
+}
+.m0a{
+	margin: 0 auto;
+}
+.m15{
+	margin: 15px;
+}
+.mt48{
+	margin-top: 48px;
+}
+.mt41{
+	margin-top: 41px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mt22{
+	margin-top: 22px;
+}
+.mt30{
+	margin-top: 30px;
+}
+.mt60{
+	margin-top: 60px;
+}
+.mt70{
+	margin-top: 70px;
+}
+.mt90{
+	margin-top: 90px;
+}
+.mt9{
+	margin-top: 9px;
+}
+.mt15{
+	margin-top: 15px;
+}
+.pt22{
+	padding-top: 22px;
+}
+.pt12{
+	padding-top: 12px;
+}
+.mr22{
+	margin-right: 22px;
+}
+.mr10{
+	margin-right: 10px;
+}
+.mr140{
+	margin-right: 140px;
+}
+.ml40{
+	margin-left: 40px;
+}
+.mr40{
+	margin-right: 40px;
+}
+.mr60{
+	margin-right: 60px;
+}
+.clear-fix{
+	clear:both; height:0; font-size: 1px; line-height: 0px;
+}
+.mr120{
+	margin-right:120px;
+}
+.ml100{
+	margin-left: 100px;
+}
+.ml200{
+	margin-left: 200px;
+}
+.hr{
+	height: 1px;
+	width: 100%;
+	background: black;
+	top: 180px;
+}
+

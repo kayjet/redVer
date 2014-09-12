@@ -1,0 +1,48 @@
+/*
+*footer style
+*made by lk
+**/
+.footer{
+	text-align: center;
+	width: 1200px;
+	height: 160px;
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 22px;
+}
+#coropation{
+	/*background: url('../skin/cropreation.png') center no-repeat;*/
+	padding-top: 22px;
+	width: 950px;
+	height: 64px;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#coropation img{
+	cursor: pointer;
+}
+#coropation img:hover{
+	box-shadow: 1px 1px 1px #888888;
+}
+.footer ul {
+	height: 40px;
+	position: relative;
+	margin: 0 auto;
+	width: 500px;
+	text-align: center;
+}
+.footer ul li {
+	float: left;
+	width: 100px;
+	text-align: center;
+	/*margin-right: px;*/
+}
+.footer_color{
+	margin-top: 60px;
+	border-top: #b0b0b0 1px solid;
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #e0e0e0;
+}

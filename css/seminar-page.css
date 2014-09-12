@@ -1,0 +1,82 @@
+/**说明会css made by lk*/
+#bg1{
+			/*background: url(../skin/sm_bg_1.png) bottom no-repeat;*/
+			height: auto;
+			/*padding-bottom: 197px;*/
+		}
+		#bg2{
+			height: 800px;
+			background: url(../skin/sm_bg_2.png) bottom no-repeat;
+		}
+		#bg3{
+			background: url(../skin/sm_bg_3.png) bottom no-repeat;
+			height: auto;
+			padding-bottom: 220px;
+		}
+		#sem_tb{
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 36px;
+		}
+		#sem_tb td{
+			border: 1px gray solid;
+			width: 260px;
+		}
+		.wh260{
+			width: 260px;
+			height: 260px;
+			box-shadow: 5px 5px 5px #8e8e8e;
+			opacity: 0.5;
+			filter:alpha(opacity=50);
+		}
+		.wh260:hover{
+			opacity: 1;
+			filter:alpha(opacity=100);
+			cursor: pointer;
+		}
+		#manager1{
+			padding: 4px;
+			background: url(../skin/manager1.png) center no-repeat #fff;			
+		}
+		#manager2{
+			padding: 4px;
+			background: url(../skin/manager2.png) center no-repeat #fff;			
+		}
+		#manager3{
+			padding: 4px;
+			background: url(../skin/manager3.png) center no-repeat #fff;			
+		}
+		.ml377{
+			margin-top: 70px;
+			margin-left: 277px;
+			width: 723px;
+			min-height: 256px;
+			text-align: left;
+		}
+		#manager_name{
+			position: absolute;
+			top: 375px;
+			left: 75px;
+		}
+		#sem_logo{
+			background: url(../skin/sem_logo.png) center no-repeat;
+			width: 731px;
+			height: 92px;
+			position: relative;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 88px;
+		}
+		#sq:hover{
+			color: white;
+			text-decoration:none;
+		}
+		#sem_txt{
+			left: 100px;
+			width: 1000px;
+			bottom: 15px;
+		}
+		.table_bg{
+			background: #dfdfdf;
+		}

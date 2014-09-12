@@ -1,0 +1,48 @@
+.reg_item_container{
+    position: relative;
+    margin-left: 380px;
+    width:300px;
+}
+.reg_item_container span{
+    position: absolute;
+    top: 5px;
+    left: -78px;
+}
+.wd50_{
+    width: 50%;
+}
+.wd48_{
+    width: 49%;
+}
+.input_checkbox{
+    width: 15px;
+    margin: 0;
+    padding: 0;
+}
+.wd40_{
+    width: 40%;
+}
+.reg_item_container p{
+    width: 62px;
+    position: relative;
+    float: left;
+}
+.reg_item_container p span{
+    left: 20px;
+    top: 3px;
+    right: auto;
+}
+.input_margin{
+    margin-bottom: 24px;
+}
+.yes_icon{
+			
+			position:absolute;
+			 width: 15px;
+			height: 15px;
+			background: url("../skin/yes.png") center no-repeat;
+			right: 5px;
+			top: 10px;
+			
+	}
+

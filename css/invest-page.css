@@ -1,0 +1,13 @@
+/*logo图标*/
+			.rel.wd1400.m0a.ht40{
+				background: url(../skin/login_logo.png) no-repeat left;
+			}
+		
+			.wd160.fl{
+				text-align: right;
+				margin-right: 18px;
+
+			}
+			img{
+				margin-right: 12px;
+			}

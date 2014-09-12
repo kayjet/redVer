@@ -1,0 +1,50 @@
+@charset "gb2312";
+/* CSS Document */
+
+ .ab_lt{
+            margin-top: 100px;
+            float: left;
+            margin-left: 100px;
+        }
+        .ab_rt{
+            float: right;
+            margin-right: 50px;
+            margin-top: 100px;
+        }
+        .bgcolor{
+            background: #f7f4f1;
+        }
+        #next_btn{
+            position: fixed;
+            bottom: 50px;
+            background: url('../skin/gundong.gif');
+            width: 60px;
+            height: 38px;
+            z-index: 500;
+            cursor: pointer;
+        }
+        #about_btn_one{
+            bottom: 150px;
+            left: 370px;
+        }
+		.gray_block{
+			width:15px;
+			height:15px;
+			margin-bottom:5px;
+			background-color: #c0c0c0;;
+			cursor:pointer;
+		}
+		#action_bar{
+			position:fixed;
+			right:20px;
+			z-index:1000;
+			top:350px;
+			width:20px;
+		}
+		.red_block{
+			background-color:red;
+			width:20px;
+			height:20px;
+			
+		}
+		

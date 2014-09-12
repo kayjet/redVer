@@ -1,0 +1,100 @@
+ /*以下是该页的全局布局*/
+        .mr38a{
+            margin-right: 38px;
+            margin-left: auto;
+        }
+        /*以下全是左面的布局*/
+        #content_left{
+            width: 63%;
+            height: 100%;
+            float: left;
+        }
+        .tImage_container{
+            width: 621px;
+            height: 413px;
+        }
+        .tabs{
+            padding-top: 12px;
+            margin-left: 3px;
+            width:153px;
+            height: 33px;
+            float: right;
+            color: #331b28;
+            cursor: pointer;
+        }
+        /*以下全是右面的布局*/
+        #content_right{
+            width: 30%;
+            height: 100%;
+            float: left;
+        }
+        .information_container{
+            margin-top: 10px;
+            width: 337px;
+            border-bottom:  1px #999999 solid;
+            height: 49px;
+        }
+        .infor_left_elem{
+            float: left;
+            height: 100%;
+            line-height: 3.4em;
+        }
+        .smaller{
+            width: 6.5em;
+        }
+        .infor_right_elem{
+            float: right;
+            height: 100%;
+            font-size:1.5em;
+            font-weight: 100;
+            line-height: 2.5em;
+        }
+        .bigger{
+            float: right;
+            height: 100%;
+            font-size: 1.5em;
+            font-weight: 100;
+            line-height: 2.8em;
+        }
+        .no_border{
+            border: none;
+            font-size:1em;
+        }
+        #goal{
+            margin-top: 14px;
+            border: none;
+            background: url('../skin/chongzhi.png') center no-repeat;
+            width: 337px;
+            height: 61px;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        #risk{
+            border: none;
+            background: url('../skin/fengxian.png') center no-repeat;
+            margin-top: 16px;
+            width: 337px;
+            height: 61px;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        #calculator{
+            width: 302px;
+            position: relative;
+            height: auto;
+        }
+        #calculator h2{
+            line-height: 100px;
+        }
+      
+        #calculate_btn{
+            background:url('../skin/jisuan.png') center no-repeat;
+            color: white;
+            width: 337px;
+            height: 100%;
+            font-size: 2em;
+            font-weight: bold;
+            border: none;
+        }
