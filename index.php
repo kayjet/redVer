@@ -97,7 +97,9 @@
                             $('.loading_content').eq(0).css('width','11%').text('11%');
                         })
                     </script>
-                    <div class="loading_content">0</div>
+                    <div class="loading_container">
+                        <div class="loading_content">0</div>
+                    </div>    
                 </div>
                 <!--进度条end-->
                 <!--填充解释{ start-->
@@ -124,8 +126,8 @@
             <div class="item_right">
                 <div class="mt22">
                     <span >票程总汇</span> 
-                    <span class="fr item_span_bg mr22" style="border-radius:5px">保障方式</span>
-                    <span class="fr item_span_bg " style="border-radius:5px">银行承诺</span>
+                    <span class="fr item_span_bg mr22">保障方式</span>
+                    <span class="fr item_span_bg ">银行承诺</span>
                 </div>
 
                 <div class="mt22">
@@ -147,9 +149,9 @@
                 <!--以下是进度条-->
                 
                 <div class="rel mt22 ">
-                <div style=" padding:3px; border:1px #E1E1E1 solid;border-radius:5px">
-                    <div class="loading_content" style="width:100%">0</div>
-                </div>
+                    <div class="loading_container">
+                        <div class="loading_content" style="width:100%">0</div>
+                    </div>
                 </div>
                 
                 <script type="text/javascript">
@@ -177,7 +179,7 @@
             <div class="fl mr40 wd460">
                 <p class="f24">说明会新闻</p>
                 <hr>
-                <ul>
+                <ul >
                     <li><span>2014.07.28</span><span>上海信於资产管理有限公司公告</span></li>
                     <li><span>2014.07.28</span><span>上海信於资产管理有限公司新闻</span></li>
                     <li><span>2014.07.28</span><span>上海信於资产管理有限公司说明会</span></li>
@@ -190,7 +192,7 @@
             <div >
                 <p class="f24">说明会新闻</p>
                 <hr>
-                <ul>
+                <ul >
                     <li><span>2014.07.28</span><span>上海信於资产管理有限公司公告</span></li>
                     <li><span>2014.07.28</span><span>上海信於资产管理有限公司新闻</span></li>
                     <li><span>2014.07.28</span><span>上海信於资产管理有限公司说明会</span></li>

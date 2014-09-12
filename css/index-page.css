@@ -91,10 +91,19 @@
 			line-height:40px;
 			background: url(../skin/2.png) repeat ;
         }
+        #news ul{
+            line-height: 165%;
+        }
         #news li span{
             margin-right: 28px;
         }
        
         #banner{
             min-width: 1200px;
+        }
+        .loading_container{
+             padding-left: 3px !important;
+             padding:3px; 
+             border:1px #E1E1E1 solid;
+             border-radius:5px
         }
