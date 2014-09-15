@@ -2,63 +2,54 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="./css/input-style.css">
+    <link rel="stylesheet" type="text/css" href="./css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="./css/news-page.css">
     <style type="text/css">
-        .news_black_line{
-            background-color: black;
-        }
-        .news_class{
-            top: -22px;
-        }
-        .news_author{
-            top: -22px;
-            right: 0px;
-        }
-        .border-no-rl{
-            width: 300px;
-            border-top: 1px solid #c0c0c0;
-            border-bottom: 1px solid #c0c0c0;
-        }
-        .news_content img{
-            margin-top: 22px;
-            max-width: 1200px;
-            margin-bottom: 22px;
-        }
-        #news_nav_narrow{
-            cursor: pointer;
-            top: 1px;
-            background: url(./skin/news_sanjiao.png) center no-repeat;
-            width: 20px;
-            height: 11px;
-        }
-        #nr{
-            top: -14px;
-            opacity: 0;
-            filter: alpha(opacity=0);
-            -webkit-transition: all 0.35s;
-            -moz-transition: all 0.35s;
-            -ms-transition: all 0.35s;
-            -o-transition: all 0.35s;
-            transition: all 0.35s;
-        }
+      #ff{
+        border-left: 1px solid #c0c0c0;
+        border-right: 1px solid #c0c0c0;
+        border-bottom: 1px solid #c0c0c0;
+        background-color: white;
+        box-shadow: 15px 15px 15px #c0c0c0;
+      }
+    
     </style>
 <?php
     require('header.php');
 ?>
-  <div id="news_nav_narrow" class="rel wd1200 m0a tc">
-      <div class="abs" id="nr">asdasdasdasdasdasd</div>
-  </div>
-  <div class="rel wd1200 m0a mt90  tc" id="ff">
-        <div class="news_black_line ht32 wd1200 mt90 rel">
-            
-            <div class="news_class fb abs">行业分类-惺惺惜惺惺</div>
-            <div class="news_author abs">The Author</div>
+  <div class="rel wd1000 m0a  pb22 tc" id="ff">
+        <div class="news_black_line ht32 wd1000 mt41 rel">
+          <!--右上角的div，显示作者 end-->
+            <div class="news_class abs">
+              <span class="fb mr22">行业分类-惺惺惜惺惺</span>
+              <!-- <span>The Author</span> -->
+            </div>
+            <!--右上角的div，显示作者-->
+            <!--黑色线框上的下来菜单 start-->
+            <div class="ftwhite fr lh200 mr22">
+                <a href="#" class="dropdown-toggle" style="color:white; " data-toggle="dropdown">
+                   <div id="menu"></div><!--定义背景图片-->
+                </a>
+                <!--下拉菜单内容 start-->
+                <ul class="dropdown-menu">
+                    <!--数据填充在这里-->
+                   <li><a href="#">公司新闻</a></li>
+                   <li class="divider"></li>
+                   <li><a href="#">行业新闻</a></li>
+                  <!-- <li class="divider"></li>这个div是定义一条区分用的横线-->
+                 <!--   <li><a href="#">分离的链接</a></li>
+                   <li class="divider"></li>
+                   <li><a href="#">另一个分离的链接</a></li> -->
+                </ul>
+                <!--下拉菜单内容 end-->
+            </div>
+            <!--黑色线框上的下来菜单 end-->
         </div>
-        <div class="mt90">
-            <p class="f48 lh200">GANGSTA FOLK</p>
-            <p >Photo booth beard raw denim letterpress vegan messenger bag stumptown</p>
-            <p class="border-no-rl rel m0a fb mt22">A really ironic artisan</p>
+        <div class="mt22">
+            <p class="f32 lh200">行业分类行业分类行业分类行业分类</p>
+            <p class="border-no-rl rel m0a mt10">作者：Author1号</p>
         </div>
-        <div class="mt90 news_content">
+        <div class="mt60 lh150 news_content">
 
             　9:40 沈阳市房地产信息中心沈阳市房地产市场研究中心主任陈全开始解读政策
 
@@ -121,31 +112,16 @@
 
 　　记者：在套上还有限制吗？
         </div>
-        <div class="fr mt22">发布于2014年9月12日 上海信誉资产&copy;</div>
+        <div class="fr mt22 mr120">发布于2014年9月12日 上海信誉资产&copy;</div>
+        <div class="clear-fix"></div>
   </div>
-  <div class="clear-fix"></div>
   <!--已经结束的end-->
- 
+ <script type="text/javascript" src="./js/dropdown.js"></script>
   <script type="text/javascript">
     $(document).ready(function  (argument) {
-        // body...
-        var flag = false;
-        $('.news_class').click(function  (ev) {
-            // body...
-
-        })
-     
-        var nav = $('#news_nav_narrow');
-        nav.click(function (e) {
-            if ($(this).css('top')!='80px') {
-                 $(this).animate({top:'80px'});
-                 $('#nr').css('opacity','1');
-             }else{
-                $(this).animate({top:'1px'});
-                 $('#nr').css('opacity','0');
-             }
-            
-        });
+        // 设置默认情况下，下拉菜单为隐藏
+        var menu = $('.dropdown-toggle');
+        menu.dropdown('toggle');
        
     })
   </script>

@@ -163,6 +163,9 @@ input,button,select,textarea{outline:none}
 .htauto{
 	height: auto;
 }
+.wd150{
+	width: 156px;
+}
 .wd100{width: 100px;}
 .wd100_{
 	width: 100%;
@@ -249,10 +252,15 @@ input,button,select,textarea{outline:none}
 .ml200{
 	margin-left: 200px;
 }
+.ml18{
+	margin-left: 18px;
+}
 .hr{
 	height: 1px;
 	width: 100%;
 	background: black;
 	top: 180px;
 }
+
+
 

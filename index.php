@@ -177,27 +177,33 @@
         <div id="news" class="rel m0a wd1000 htauto mt90 fls3">
             <!--底部左面新闻栏 { start-->
             <div class="fl mr40 wd460">
-                <p class="f24">说明会新闻</p>
+                <div class="f24">
+                    <span>说明会新闻</span>  
+                    <a href="news_list_page.php" class="fr f14 mt10 lh200">more/更多</a>
+                </div>
                 <hr>
                 <ul >
-                    <li><span>2014.07.28</span><span>上海信於资产管理有限公司公告</span></li>
-                    <li><span>2014.07.28</span><span>上海信於资产管理有限公司新闻</span></li>
-                    <li><span>2014.07.28</span><span>上海信於资产管理有限公司说明会</span></li>
-                    <li><span>2014.07.28</span><span>上海信於资产公司产品说明</span></li>
-                    <li><span>2014.07.28</span><span>上海信於资产公司简介</span></li>
+                    <li><a href="news_page.php"><span>2014.07.28</span><span>上海信於资产管理有限公司公告test</span></a></li>
+                    <li><a href=""><span>2014.07.28</span><span>上海信於资产管理有限公司公告111</span></a></li>
+                    <li><a href=""><span>2014.07.28</span><span>上海信於资产管理有限公司公告111</span></a></li>
+                    <li><a href=""><span>2014.07.28</span><span>上海信於资产管理有限公司公告111</span></a></li>
+                    <li><a href=""><span>2014.07.28</span><span>上海信於资产管理有限公司公告111</span></a></li>
                 </ul>
             </div>
             <!--end}底部左面新闻栏 -->
             <!--以下是右面-->
             <div >
-                <p class="f24">说明会新闻</p>
+               <div class="f24">
+                    <span>说明会新闻</span>  
+                    <a href="" class="fr f14 mt10 lh200">更多...</a>
+                </div>
                 <hr>
                 <ul >
-                    <li><span>2014.07.28</span><span>上海信於资产管理有限公司公告</span></li>
-                    <li><span>2014.07.28</span><span>上海信於资产管理有限公司新闻</span></li>
-                    <li><span>2014.07.28</span><span>上海信於资产管理有限公司说明会</span></li>
-                    <li><span>2014.07.28</span><span>上海信於资产公司产品说明</span></li>
-                    <li><span>2014.07.28</span><span>上海信於资产公司简介</span></li>
+                    <li><a href="news_page.php"><span>2014.07.28</span><span>上海信於资产管理有限公司公告test</span></a></li>
+                    <li><a href=""><span>2014.07.28</span><span>上海信於资产管理有限公司公告111</span></a></li>
+                    <li><a href=""><span>2014.07.28</span><span>上海信於资产管理有限公司公告111</span></a></li>
+                    <li><a href=""><span>2014.07.28</span><span>上海信於资产管理有限公司公告111</span></a></li>
+                    <li><a href=""><span>2014.07.28</span><span>上海信於资产管理有限公司公告111</span></a></li>
                 </ul>
             </div>
             <!--右面 end-->

@@ -57,6 +57,12 @@
                     <!--里面的一小项-->
                     <!--里面的一小项-->
                     <div class="information_container">
+                        <span>投资</span>
+                        <span class="infor_right_elem">元</span>
+                        <input class="fr ht32 mr10">
+                    </div>
+                    <div class="information_container">
+
                         <button id="goal" type="submit">马上投资</button>
                         <button id="risk" type="submit">风险提示</button>
                     </div>

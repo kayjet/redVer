@@ -33,7 +33,7 @@ include "./1.txt";
                 <li><a href="getting_started.php"></a></li><!--投资流程-->
                 <li><a href="item.php"></a></li><!--理财专区-->
                 <li><a href="seminar.php"></a></li><!--说明会-->
-                <li><a href=""></a></li>
+                <li><a href="helpme.php"></a></li>
                 <li><a href=""></a></li>
             </ul>
         </div>

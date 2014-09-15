@@ -1,15 +1,15 @@
   $(document).ready(function (argument) {
     // body...
-    var a = $('.black a');
-    //当鼠标移动到a上，切换图片。其实是一整张图片，通过调整background-postion。
-    a.each(function (index, element) {
-      a.eq(index).hover(function (e) {
-        var f = index * -144;
-        a.eq(index).css('background', 'url("./skin/color.png") ' + f + 'px' + ' 12px no-repeat');
-      }, function (e) {
-        a.eq(index).css('background', '')
-      })
-    });
+    // var a = $('.black a');
+    // //当鼠标移动到a上，切换图片。其实是一整张图片，通过调整background-postion。
+    // a.each(function (index, element) {
+    //   a.eq(index).hover(function (e) {
+    //     var f = index * -144;
+    //     a.eq(index).css('background', 'url("./skin/color.png") ' + f + 'px' + ' 12px no-repeat');
+    //   }, function (e) {
+    //     a.eq(index).css('background', '')
+    //   })
+    // });
     //返回顶部按钮的事件监听
     $(window).on("scroll", function () {
       var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
