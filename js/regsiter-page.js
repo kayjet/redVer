@@ -17,7 +17,9 @@ $(document).ready(function (argument) {
 	//隐藏钩子
 	yesIcon.css('display', 'none');
 	//获取所有的checkbox
-	var checkbox = document.getElementsByClassName('input_checkbox');
+	var checkbox = $('.input_checkbox');
+//	console.log($(".input_checkbox")[0])
+//	document.getE
 	//验证用户名是否正确
 	isUsernameRight('Tel', warnObj.eq(0), yesIcon.eq(0));
 	//验证密码
@@ -30,6 +32,7 @@ $(document).ready(function (argument) {
 		for (var i = 0; i < checkbox.length; i++) {
 			if (checkbox[i].checked) {
 				warnObj.eq(4).css('display', 'none');
+				$('#reg_btn').attr('type','submit');
 				break;
 			}
 			warnObj.eq(4).css('display', 'block').text('请至少选择一项兴趣');
@@ -50,7 +53,7 @@ $(document).ready(function (argument) {
 				} else {
 					timeout = 15 * count;
 					$('#yzm_btn ').attr('value', '获取验证码'); //span
-					$('#yzm_btn').css('background', '#3498DB');
+					$('#yzm_btn').css('background', '#FF9966');
 					check = false;
 					$('#yzm_btn ').attr("disabled", false);
 					clearInterval(timer);
@@ -72,4 +75,18 @@ $(document).ready(function (argument) {
 			}
 		})
 	})
+	//判断手机验证码kaishi
+		$("#sj_yzm").on('keyup',function () {
+					$(this).val($(this).val().replace(/\D/g, ''));
+					var a = $(this).val();
+					if(a.length>6){
+						$(this).val('');
+					}
+					if(false){
+						yesIcon.eq(1).css('display','block');
+					}else{
+						$(this).css('border','1px red solid');
+					}
+			})
+		
 })

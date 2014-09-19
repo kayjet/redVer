@@ -61,6 +61,7 @@
             font-size:1em;
         }
         #goal{
+        	cursor: pointer;
             margin-top: 14px;
             border: none;
             background: url('../skin/chongzhi.png') center no-repeat;
@@ -71,6 +72,7 @@
             font-weight: bold;
         }
         #risk{
+        	cursor: pointer;
             border: none;
             background: url('../skin/fengxian.png') center no-repeat;
             margin-top: 16px;
@@ -90,6 +92,7 @@
         }
       
         #calculate_btn{
+        	cursor: pointer;
             background:url('../skin/jisuan.png') center no-repeat;
             color: white;
             width: 337px;
@@ -98,3 +101,4 @@
             font-weight: bold;
             border: none;
         }
+       

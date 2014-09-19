@@ -8,6 +8,10 @@
    $('.fgray').eq(0).css({
      'height': height - 270
    });
+    var marginLeft = (width-60)/2;
+   setTimeout(function (e) {
+   	    next_btn.css({'opacity':'1','filter':'alpha(opacity=0)','margin-left':marginLeft});
+   },500);
    //初始化除第一屏以外的div高度
    for (var i = 1; i < 12; i++) {
      $('.fgray').eq(i).css({
@@ -60,8 +64,7 @@
 			 })
 		});
     });
-   var marginLeft = (width-60)/2;
-   next_btn.css('margin-left',marginLeft);
+
    //next按钮click行为控制
    next_btn.click(function (e) {
      var sh = $(document).scrollTop();
@@ -73,6 +76,7 @@
        TweenLite.to(bh, 1, {
          scrollTop: height * 2
        });
+      
      } else if (sh > height * 2 - 180 && sh < height * 3 - 180) {
        TweenLite.to(bh, 1, {
          scrollTop: height * 3
@@ -89,12 +93,17 @@
        TweenLite.to(bh, 1, {
          scrollTop: height * 6
        })
+	     
      } else if (sh > height * 6 - 180 && sh < height * 7 - 180) {
        TweenLite.to(bh, 1, {
          scrollTop: height * 7
        });
+          $(this).css({'bottom':'-100px'});
+	        setTimeout(function(){
+	       		next_btn.css('bottom','50px');
+	       },800);
      }
    });
    $('.footer_color').css('margin-top',0);
-	
+	$("#action_bar").css('top',height/2)
  })

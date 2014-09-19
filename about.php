@@ -33,7 +33,7 @@
     </div>
     <!-- <div class="clear-fix"></div> -->
     <!--第二屏-->
-    <div class="rel wd100_ fgray bgcolor" style="border-top:1px solid black;">
+    <div class="rel wd100_ fgray bgcolor" style="min-width:1200px;border-top:1px solid black;">
         <div  class="rel wd1200 m0a ht100_ fgray bgcolor">
             <div class="ab_lt">
                 <p class="ftred fb f32">能够安全安心面向社会进行投资</p>

@@ -73,6 +73,9 @@ input,button,select,textarea{outline:none}
 .lh200{
 	line-height: 200%;
 }
+.lh250{
+	line-height: 250%;
+}
 .ftwhite{
 	color: white;
 }
@@ -127,6 +130,9 @@ input,button,select,textarea{outline:none}
 .wd200{
 	width: 200px;
 }
+.wd175{
+	width: 175px;
+}
 .wd160{
 	width: 160px;
 }
@@ -175,6 +181,9 @@ input,button,select,textarea{outline:none}
 }
 .ht32{
 	height:32px;
+}
+.ht38{
+	height: 38px;
 }
 /*边距*/
 .pb22{
@@ -256,10 +265,11 @@ input,button,select,textarea{outline:none}
 	margin-left: 18px;
 }
 .hr{
+	min-width: 1200px;
 	height: 1px;
 	width: 100%;
 	background: black;
-	top: 180px;
+	/*top: 180px;*/
 }
 
 

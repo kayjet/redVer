@@ -18,7 +18,7 @@
     <p class="f32">一号凭是一个去担保化的平台,所选产品却比担保化产品更安全</p>
     <br><br><br><br><br><br> <br> <br>
   </div>
-  <div class="rel wd100_ htauto bg_gray" style="border-top:black 1px solid;">
+  <div class="rel wd100_ htauto bg_gray" style="min-width:1200px; border-top:black 1px solid;">
     <div class="rel wd1200 m0a htauto fgray tc" >
     <br><br><br><br>
       <p class="mt90 f60b"> 轻轻点击鼠标，立即开通免费账户吧！</p><br>

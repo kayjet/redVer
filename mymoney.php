@@ -3,6 +3,11 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="./css/input-style.css">
 	<link rel="stylesheet" type="text/css" href="./css/jifen-page.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css"/>
+	<div id="modal">
+    	<div id="modal-close-btn"></div>
+		<div id="modal-white"></div>
+	</div>
 <?php
 	require('header.php');
 ?>
@@ -213,7 +218,8 @@
 							<div class="process_bar_inner"></div>
 						</div>
 						<div class="fl mt10 ml40 fgray">融资进度</div>
-						<div class="fr common_btn_on wd200 ht32 mr40 lh200 f16 ftwhite fb">我要投资</div>
+						<input class="fr common_btn_on wd200 ht32 mr40 lh200 f16 ftwhite fb" 
+						value="我要投资" type="button" id="tz"/>
 						<div class="clear-fix"></div>
 					</div>
 					<div class="mt22">
@@ -228,40 +234,7 @@
 		</div>
 	</div>
 	<div class="clear-fix"></div>
-	<script type="text/javascript">
-		$(document).ready(function  (argument) {
-			//设置进度条宽度 @width 是控制进度条的走向 @eq(0)是表示第一个进度条 第二个进度条可以用 eq(1)
-			$('.process_bar_inner').eq(0).css('width','100%');
-			//设置进度条中间的字 @left决定的是箭头的位置，有1%的偏差; @text()是传值，表示百分比
-			$('.percent').css({'left':'99%','color':'#4475f6','text-align':'center','font-size':'12px'}).text('100%');
-			//获取yes_flag对象
-			var yes_flag =$('.yes_flag');
-			//将所有的yes_flag隐藏
-			yes_flag.css('display','none');
-			//获取三角图标对象
-			var sj = $('.sj');
-			//获取子列表的标题
-			var list_title =$('.list_title');
-			//获取列表内容1和2对象
-			var item1 = $('#collapseOne');
-			var item2 = $('#collapseTwo')
-			//new一个数组
-			var arr = new Array();
-			arr.push(item1,item2);
-			list_title.each(function  (i,e) {
-				// body...
-				$(this).click(function  (ev) {
-					// body...
-					if(arr[i].css('display')!='none'){
-						sj.eq(i).css('background','url("./skin/sanjiao_r.png") 5px no-repeat;');
-					}else{
-						sj.eq(i).css('background','url("./skin/sanjiao.png") 5px no-repeat');
-					}
-				})
-			});
-			
-		})
-	</script>
+<script src="js/mymoney-page.js" type="text/javascript" ></script>
 <script type="text/javascript" src="./js/transition.js"></script>
 <script type="text/javascript" src="./js/collapse.js"></script>
 <?php

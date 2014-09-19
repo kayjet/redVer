@@ -13,7 +13,7 @@
 #coropation{
 	/*background: url('../skin/cropreation.png') center no-repeat;*/
 	padding-top: 22px;
-	width: 950px;
+	min-width: 950px;
 	height: 64px;
 	position: relative;
 	margin: 0 auto;
@@ -39,9 +39,12 @@
 	/*margin-right: px;*/
 }
 .footer_color{
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 60px;
 	border-top: #b0b0b0 1px solid;
 	position: relative;
+	min-width: 1200px;
 	width: 100%;
 	height: auto;
 	background-color: #e0e0e0;

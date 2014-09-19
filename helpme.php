@@ -2,30 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="./css/input-style.css">
-   <style type="text/css">
-      .help-page-btn{
-        width: 230px;
-        height: 225px;
-        border-radius: 15px;
-
-      }
-      .btn-color-two{
-        background: url('./skin/帮助中心_03.png')  65px 30px no-repeat;
-          background-color: #69c36b;
-      }
-      .btn-color-three{
-          background: url('./skin/帮助中心_06.png')  75px 38px no-repeat;
-          background-color: #6cc7d5;
-      }
-      .btn-color-four{
-          background-color: #cdb16e;
-      }
-      .btn-text{
-        bottom: 24px;
-        left: 68px;
-      }
-      
-   </style>
+    <link rel="stylesheet" type="text/css" href="./css/helpme-page.css">
 <?php
     require('header.php');
 ?>
@@ -38,9 +15,10 @@
     <br><br><br><br><br><br> <br> <br>
   </div>
   <div class="rel wd1200 htauto m0a " style="border-top:black 1px solid;">
-      <ul class="rel m0a wd1000 mt30">
+      <ul class="rel m0a wd1000 mt60" id="ul-one">
+        <div class="hover-div abs"></div>
           <li class="fl mr22">
-            <div class="help-page-btn tabs_off rel">
+            <div class="help-page-btn  rel btn-color-one">
               <div class="f24 ftwhite abs btn-text">我要理财</div>
             </div>
           </li>
@@ -62,24 +40,24 @@
           <div class="clear-fix"></div>
       </ul>
       
-      <ul class="mt30 rel wd1000 m0a ">
+      <ul class="mt60 rel wd1000 m0a ">
         <li class="fl mr10 ">
-          <div class=" ht32 wd150 tabs_off lh200">新手必读</div>
+          <div class=" ht38 wd150 tabs_off lh250">新手必读</div>
         </li>
         <li class="fl mr10">
-          <div class=" ht32 wd150 tabs_off lh200">产品介绍</div>
+          <div class=" ht38 wd150 tabs_off lh250">产品介绍</div>
         </li>
         <li class="fl mr10">
-          <div class=" ht32 wd150 tabs_off lh200">收益与费用</div>
+          <div class=" ht38 wd150 tabs_off lh250">收益与费用</div>
         </li>
         <li class="fl mr10">
-          <div class=" ht32 wd150 tabs_off lh200">优选理财计划</div>
+          <div class=" ht38 wd150 tabs_off lh250">优选理财计划</div>
         </li>
         <li class="fl mr10">
-          <div class=" ht32 wd150 tabs_off lh200">散标投资</div>
+          <div class=" ht38 wd150 tabs_off lh250">散标投资</div>
         </li>
         <li class="fl ">
-          <div class=" ht32 wd150 tabs_off lh200">债权转让</div>
+          <div class=" ht38 wd150 tabs_off lh250">债权转让</div>
         </li>
          <div class="clear-fix"></div>
       </ul>
@@ -93,13 +71,18 @@
         <div>6666666666666666666666666</div>
       </div>
   </div>
+
   <script type="text/javascript">
       $(document).ready(function  (argument) {
-        // body...
+        /*获取6个文章内容*/
         var content = $('.content').children();
+        /*设置隐藏*/
         content.css('display','none');
+        /*设置第一个显示*/
         content.eq(0).css('display','block');
-          var liTwo = $('ul').eq(2).find('div');
+        /* 获取第二个li元素*/
+         var liTwo = $('ul').eq(2).find('div');
+         /*6个按钮的点击事件 开始*/
         liTwo.eq(0).addClass('common_btn_red ftwhite').removeClass('tabs_off');
           liTwo.each(function  (i,e) {
             // body...
@@ -111,8 +94,19 @@
                   content.eq(i).css('display','block');
               })
           })
-
-      })
+		/*点击事件结束*/
+    	$("#ul-one").find('li').each(function (i,e) {
+	    		$(this).hover(function (ev) {
+	    			var a = 232*i+20*i;
+	    			$('.hover-div').css('left',a+'px');
+//					$.to($('.hover-div'),1,{
+//						'left':a
+//					})
+		    	},function (ev) {
+		    		
+		    	})
+    	})
+    })
   </script>
 <?php
     require('footer.php');

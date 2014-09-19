@@ -33,7 +33,7 @@
     </div>
     <!--不影响end-->
     <!--滚动新闻start-->
-    <div class="rel m0a wd1200 htauto" style="clear:both">
+    <div class="rel  m0a wd1200 htauto" style="clear:both">
         <div id="news_silder_bar_left" class="fl"><span class="fr ftwhite mr140 f16 fb lh200">新闻动态</span></div>
         <div id="news_silder_bar_right" class="fl">
             <!--新闻填充在这里{ start-->
@@ -46,7 +46,7 @@
     <!--滚动新闻end-->
    <div class="clear-fix"></div>
     <!--内容-->
-    <div class="rel m0a wd1200 htauto">
+    <div class="rel mt22  m0a wd1200 htauto">
         <!--item-->
         <div class="item_container">
             <div class="item_left fl" style="background:url(images/f940ef38ac9309d1f91a1805241b381c.gif)">
@@ -147,7 +147,7 @@
                     </p>
                 </div>
                 <!--以下是进度条-->
-                
+
                 <div class="rel mt22 ">
                     <div class="loading_container">
                         <div class="loading_content" style="width:100%">0</div>
@@ -179,11 +179,11 @@
             <div class="fl mr40 wd460">
                 <div class="f24">
                     <span>说明会新闻</span>  
-                    <a href="news_list_page.php" class="fr f14 mt10 lh200">more/更多</a>
+                    <a href="news_list_page.php" class="fr f14 mt10 lh200">更多>></a>
                 </div>
                 <hr>
                 <ul >
-                    <li><a href="news_page.php"><span>2014.07.28</span><span>上海信於资产管理有限公司公告test</span></a></li>
+                    <li><a href="news_page2.php"><span>2014.07.28</span><span>上海信於资产管理有限公司公告test</span></a></li>
                     <li><a href=""><span>2014.07.28</span><span>上海信於资产管理有限公司公告111</span></a></li>
                     <li><a href=""><span>2014.07.28</span><span>上海信於资产管理有限公司公告111</span></a></li>
                     <li><a href=""><span>2014.07.28</span><span>上海信於资产管理有限公司公告111</span></a></li>
@@ -195,7 +195,7 @@
             <div >
                <div class="f24">
                     <span>说明会新闻</span>  
-                    <a href="" class="fr f14 mt10 lh200">更多...</a>
+                    <a href="" class="fr f14 mt10 lh200">更多>></a>
                 </div>
                 <hr>
                 <ul >

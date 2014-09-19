@@ -114,6 +114,8 @@
 .waring{
 	color: #cc3333;
 	background:  #ffe9eb;
+	text-align: center;
+	line-height: 250%;
 }
 .tabs_off{
 	border: none;

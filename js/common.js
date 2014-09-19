@@ -190,7 +190,7 @@ function isPasswordRight(_id, warnObj, _yesIcon) {
             // $(this).css('border','1px red solid');
         } else {
             if (!isPassword(password || password == null)) {
-                obj.css('display', 'block').text('请正确输入密码');
+                obj.css('display', 'block').text('密码必须是12位之间的英语字母与数字的组合');
                 $(id).css({
                     'border': '1px red solid',
                     'box-shadow': 'none',
@@ -271,6 +271,7 @@ function isEmailRight(_id, warnObj, _yesIcon) {
         }
     });
 }
+
 function isYzmRight(_id,_id2, warnObj, _yesIcon) {
     var id = '#' + _id;
 	var id2 = '#' + _id2;

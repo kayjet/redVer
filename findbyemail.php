@@ -9,7 +9,7 @@
   	<script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
-<form action="regcheck.ghtml" method="post" target="_self"><!--表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里-->
+<form action="regcheck.ghtml" method="post" target="_self" class="rel m0a wd1200"><!--表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里-->
 <div class="rel m0a wd1000 mt22">
 	<!--logo跳转 start-->
     <div class="login_title_bg " onClick="window.open('/index.ghtml','_self')"></div>
@@ -52,26 +52,7 @@
 </div>
 </form><!--表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里 end-->
     <div class="clear-fix"></div>
-<script type="text/javascript">
-    $(document).ready(function  (argument) {
-        var pic_yzm = $('#get_yzm');
-        pic_yzm.attr('value',getRandomCode()).click(function  (ev) {
-            $(this).attr('value',getRandomCode());
-        });
-		var waring = $('.waring');
-		waring.css('display','none');
-		var yes_icon = $('.yes_icon');
-		yes_icon.eq(0).css('right',195);
-		isEmailRight('find_by_email',waring.eq(0),yes_icon.eq(0));
-		isYzmRight('user_input_yzm','get_yzm',waring.eq(1),yes_icon.eq(1));
-
-
-        $('#to_phone').click(function  (ev) {
-            // body...
-            window.location.href="findbyphone.php";
-        });
-    })
-</script>
+<script type="text/javascript" src="js/find-by-email-page.js"></script>
 <?php
     require('footer.php');
 ?>

@@ -11,7 +11,7 @@
     </style>
 </head>
 <body background="./skin/1234_01_01.png">
-<form action="regcheck.ghtml" method="post" target="_self">
+<form action="regcheck.ghtml" method="post" target="_self" class="rel  wd1200 m0a">
 <div class="rel m0a wd1000 mt22">
 	<!--logo跳转 start-->
     <div class="login_title_bg" onClick="window.open('/index.ghtml','_self')"></div>
@@ -42,7 +42,7 @@
             <!--输入信息正确以后弹出来的钩 end-->
             <span>验证码：</span>
             <!--验证码的input框 start-->
-            <input placeholder="验证码"class="yzm_input wd50_ ht32 mr22">
+            <input placeholder="验证码" id="sj_yzm" class="yzm_input wd50_ ht32 mr22">
             <!--验证码的input框 end-->
             <!--获取验证码的button start-->
             <input type="button" id="yzm_btn"  value="获取验证码" class="common_btn_on ftwhite ht32 wd40_"/>
@@ -65,7 +65,7 @@
             <input type="password" placeholder="请确认密码" id="reg_pass_confirm" class="password_input  wd100_ ht32"/>
             <div class="waring">1111</div>
         </div>
-        <div id="aaa"></div>
+        <!--<div id="aaa"></div>-->
         <div class="reg_item_container mt30">
             <span>兴趣：</span>
             <p><input class="input_margin input_checkbox"  type="checkbox"><span class="lh10">理财</span></p>
@@ -79,16 +79,14 @@
             <div class="waring mt9">1111</div>
         </div>
         <div class="m0a rel wd1000 tc mt10">
-             <input type="submit" class="common_btn_on ftwhite ht32 wd200 " id="reg_btn" value="马上注册"/>
+             <input type="button" class="common_btn_on ftwhite ht32 wd200 " id="reg_btn" value="马上注册"/>
         </div>
         </div>
     </div>
-    
-    
 </div>
-</form>
     </div>
     <div class="clear-fix"></div>
+</form>    
     <script type="text/javascript" src="./js/regsiter-page.js"></script>
 <?php
     require('footer.php');

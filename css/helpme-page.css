@@ -1,0 +1,42 @@
+.help-page-btn{
+        width: 230px;
+        height: 225px;
+        border-radius: 18px;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        cursor: pointer;
+      }
+  .hover-div{
+    -webkit-transition:all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition:all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  	cursor: pointer;
+  	left: 0;
+      background: url('../skin/when_click.png')center no-repeat;
+      width: 230px;
+      height: 225px;
+      /*opacity: 1;
+      filter: alpha(opacity=100);*/
+      z-index: 200;
+  }
+      .btn-color-one{
+        background: url('../skin/licai.png')  2px 35px no-repeat #949494;
+      }
+      .btn-color-two{
+        background: url('../skin/anquan.png')  75px 40px no-repeat;
+          background-color: #69c36b;
+      }
+      .btn-color-three{
+          background: url('../skin/gl.png')  63px 36px no-repeat;
+          background-color: #6cc7d5;
+      }
+      .btn-color-four{
+          background-color: #cdb16e;
+      }
+      .btn-text{
+        bottom: 24px;
+        left: 68px;
+      }
+      

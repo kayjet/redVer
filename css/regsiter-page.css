@@ -36,13 +36,11 @@
     margin-bottom: 24px;
 }
 .yes_icon{
-			
 			position:absolute;
 			 width: 15px;
 			height: 15px;
 			background: url("../skin/yes.png") center no-repeat;
 			right: 5px;
 			top: 10px;
-			
 	}
 

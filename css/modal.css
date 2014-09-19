@@ -1,0 +1,28 @@
+ #modal{
+        	background: url(../skin/2.png) repeat;
+        	position: fixed;
+        	width: 100%;
+        	height: 100%;
+        	display: none;
+        	/*margin-top: 22px;*/
+        	z-index:2000;
+        	overflow: scroll;
+        }
+        #modal-white{
+        	position: relative;
+        	background-color: white;
+        	border-radius: 15px;
+        	box-shadow: 5px 5px 10px gray;
+        	margin: 15px;
+        	padding-bottom: 22px;
+        }
+        #modal-close-btn{
+        	background:url(../skin/x.png) center no-repeat;
+        	cursor: pointer;
+        	position: absolute;
+        	z-index: 2500;
+        	width: 15px;
+        	height: 15px;
+        	right: 25px;
+        	top: 25px;
+        }

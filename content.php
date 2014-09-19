@@ -3,6 +3,11 @@
 <head>
     <link rel="stylesheet" type="text/css" href="./css/content-page.css">
     <link rel="stylesheet" type="text/css" href="./css/input-style.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css"/>
+    <div id="modal">
+    	<div id="modal-close-btn"></div>
+		<div id="modal-white"></div>
+	</div>
 <?php
     require ('header.php');
 ?>
@@ -23,7 +28,7 @@
                         </div>
                         <!---产品内容页面-->
                         <div class="rel mr38a mt10 htauto">
-                              <div class="fr" id="ajax_load">12312312321321</div>
+                              <div class="fr" id="ajax_load"></div>
                         </div>
                         <!---产品内容页面end-->
                     <!--左面div中的容器 end-->
@@ -56,16 +61,18 @@
                     </div>
                     <!--里面的一小项-->
                     <!--里面的一小项-->
+                    <!--<form action="invest.php" method="get">-->
+	                    <div class="information_container">
+	                         <div class="infor_left_elem">投资</div>
+	                        <span class="infor_right_elem">元</span>
+	                        <input name="money"  id="money" class="fr ht32 mr10">
+	                    </div>
+                    
                     <div class="information_container">
-                        <span>投资</span>
-                        <span class="infor_right_elem">元</span>
-                        <input class="fr ht32 mr10">
-                    </div>
-                    <div class="information_container">
-
                         <button id="goal" type="submit">马上投资</button>
                         <button id="risk" type="submit">风险提示</button>
                     </div>
+                    <!--</form>-->
                     <!--里面的一小项-->
                     <!--里面的一小项-->
                     <div class="information_container" style="margin-top:116px;">
@@ -127,7 +134,7 @@
                         </div>
                         <!--里面的一小项-->
                         <!--里面的一小项-->
-                        <div class="information_container no_border" >
+                        <div class="information_container no_border" style="height: 79px; margin-top: 22px;" >
                            <input type="submit" id="calculate_btn" value="计算">
                         </div>
                         <!--里面的一小项-->

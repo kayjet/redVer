@@ -15,6 +15,11 @@
             background: #f7f4f1;
         }
         #next_btn{
+        	 -webkit-transition:all 0.5s ease-out;
+		    -moz-transition: all 0.5s ease-out;
+		    -ms-transition:all 0.5s ease-out;
+		    -o-transition: all 0.5s ease-out;
+		    transition: all 0.5s ease-out;
             position: fixed;
             bottom: 50px;
             background: url('../skin/gundong.gif');
@@ -22,6 +27,8 @@
             height: 38px;
             z-index: 500;
             cursor: pointer;
+            opacity: 0;
+      		filter: alpha(opacity=0);
         }
         #about_btn_one{
             bottom: 150px;

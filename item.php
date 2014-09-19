@@ -26,6 +26,7 @@
   </div>
   <!--tabs切换按钮end-->
   <div class="clear-fix"></div>
+  <div class="rel wd1200 m0a">
   <!---正在进行的投标start-->
   <div  class="wd1000 rel m0a mt22 itemz" >
         <!--item-->
@@ -36,7 +37,7 @@
                 	中小企业支援型理财产品1号<br/>3个月，预期收益8%<br/>
                 	<span id="test1"></span>
                      <script type="text/javascript">
-                    	time_xdif("2014/10/1","test1");
+//                  	time_xdif("2014/10/1","test1");
                     </script>
                 </div>
                 <!--倒计时div结束-->
@@ -99,7 +100,7 @@
                 	中小企业支援型理财产品1号<br/>3个月，预期收益8%<br/>
                 	<span id="test2"></span>
                      <script type="text/javascript">
-                    	time_xdif("2014/10/1","test2");
+//                  	time_xdif("2014/10/1","test2");
                     </script>
                 </div>
                 <!--倒计时div结束-->
@@ -160,7 +161,7 @@
                 	中小企业支援型理财产品1号<br/>3个月，预期收益8%<br/>
                 	<span id="test2"></span>
                      <script type="text/javascript">
-                    	time_xdif("2014/10/1","test2");
+//                  	time_xdif("2014/10/1","test2");
                     </script>
                 </div>
                 <!--倒计时div结束-->
@@ -211,6 +212,7 @@
         <!--item end-->
   </div>
   <!--已经结束的end-->
+    </div>
   <script type="text/javascript" src="./js/item-page.js"></script>
 <?php
     require('footer.php');

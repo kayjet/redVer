@@ -9,7 +9,7 @@
   	<script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
-<form action="regcheck.ghtml" method="post" target="_self"><!--表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里-->
+<form action="regcheck.ghtml"  method="post" target="_self"  class="rel m0a wd1200"><!--表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里-->
 <div class="rel m0a wd1000 mt22">
 	<!--logo跳转 start-->
     <div class="login_title_bg " onClick="window.open('/index.ghtml','_self')"></div>
@@ -41,7 +41,7 @@
         <!--短信验证码-->
         <div class="wd680 m0a tc rel">
         	<span>验证码：</span>
-        	<input class=" yzm_input ht32 mt30" ><!--<==============在此获得输入内容-->
+        	<input class=" yzm_input ht32 mt30" i d="input_yzm" ><!--<==============在此获得输入内容-->
             <input type="button" class="common_btn_on wd100 ht32 ftwhite "  id="sj_yzm" value="获取验证码"><!--按钮-->
             <div class="yes_icon"></div>
             <div class="waring  wd325 m0a">1111</div>   
@@ -57,47 +57,7 @@
 </div>
 </form><!--表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里表单在这里-->
     <div class="clear-fix"></div>
-<script type="text/javascript">
-    $(document).ready(function  (argument) {
-        var check = false;
-    //设置再次发送时间
-    var timeout = 15;
-    //设置点击次数，次数越多，时间越久
-    var count = 1;
-        var get_yzm = $('#sj_yzm');
-           //验证码点击事件
-            get_yzm.click(function () {
-                if (!check) {
-                    $(this).attr("disabled", true);
-                    check = true;
-                    count = count + 1;
-                    var timer = setInterval(function () {
-                        if (timeout > 0) {
-                            timeout = timeout - 1;
-                            get_yzm.css('background', 'gray');
-                            get_yzm.attr('value', timeout + '秒后重发'); //span
-                        } else {
-                            timeout = 15 * count;
-                            get_yzm.attr('value', '获取验证码'); //span
-                            get_yzm.css('background', '#3498DB');
-                            check = false;
-                            get_yzm.attr("disabled", false);
-                            clearInterval(timer);
-                        }
-                    }, 1000);
-                }
-            });
-        var waring = $('.waring');
-        var yesIcon = $('.yes_icon');
-        waring.css('display','none');
-        isUsernameRight('find_by_phone', waring.eq(0), yesIcon.eq(0));
-
-         $('#to_email').click(function  (ev) {
-            // body...
-            window.location.href="findbyemail.php";
-        });
-    })
-</script>
+<script type="text/javascript" src="js/find-by-phone-page.js"></script>
 <?php
     require('footer.php');
 ?>
